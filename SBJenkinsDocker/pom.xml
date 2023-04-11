@@ -11,6 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>SBJenkinsDocker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>SBJenkinsDocker</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -26,6 +27,12 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+      <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
@@ -44,6 +51,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>jenikins-docker</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
